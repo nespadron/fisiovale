@@ -8,7 +8,7 @@
     <title>Fisio Valee | Lic. Valeria Ponce · Fisioterapia</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css?v=1">
+    <link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
 
@@ -90,7 +90,7 @@
             <a href="#agenda" class="btn-primary" style="margin-top:1.6rem">Empieza tu recuperación →</a>
         </div>
         <div class="about-card">
-            <img src="img/recuperacion.jpg" alt="Valeria Ponce dando terapia de recuperación a un deportista">
+            <img src="img/recuperacion.jpg" alt="Valeria Ponce dando terapia de recuperación a un deportista" class="parallax-img">
         </div>
     </div>
 </section>
@@ -162,6 +162,15 @@
     </div>
 </section>
 
+<!-- ===== FRANJA PARALLAX (imagen que "cobra vida" al hacer scroll) ===== -->
+<section class="banner" aria-label="El movimiento es medicina">
+    <div class="banner-media"><img src="img/recuperacion.jpg" alt="" loading="lazy"></div>
+    <div class="banner-content">
+        <p class="banner-quote reveal">"El movimiento es medicina."</p>
+        <span class="banner-author reveal">— Ft. Valeria Ponce</span>
+    </div>
+</section>
+
 <!-- ===== GALERÍA ===== -->
 <section class="section" id="galeria">
     <div class="section-label">En acción</div>
@@ -169,15 +178,15 @@
     <p class="section-sub reveal">Trabajo en campo con deportistas y atención a domicilio en Guadalajara.</p>
     <div class="gallery-row">
         <figure class="gallery-item reveal">
-            <img src="img/deportiva.jpg" alt="Valeria atendiendo a un futbolista en la cancha" loading="lazy">
+            <img src="img/deportiva.jpg" alt="Valeria atendiendo a un futbolista en la cancha" loading="lazy" class="parallax-img">
             <figcaption>Fisioterapia deportiva en campo</figcaption>
         </figure>
         <figure class="gallery-item reveal" style="transition-delay:.1s">
-            <img src="img/cancha.jpg" alt="Sesión de presoterapia con deportista" loading="lazy">
+            <img src="img/cancha.jpg" alt="Sesión de presoterapia con deportista" loading="lazy" class="parallax-img">
             <figcaption>Recuperación con presoterapia</figcaption>
         </figure>
         <figure class="gallery-item reveal" style="transition-delay:.2s">
-            <img src="img/valeria.jpg" alt="Valeria dando masaje terapéutico" loading="lazy">
+            <img src="img/valeria.jpg" alt="Valeria dando masaje terapéutico" loading="lazy" class="parallax-img">
             <figcaption>Terapia manual personalizada</figcaption>
         </figure>
     </div>
@@ -260,6 +269,6 @@
 <script src="libs/gsap.min.js"></script>
 <script src="libs/ScrollTrigger.min.js"></script>
 <script src="libs/lenis.min.js"></script>
-<script src="script.js?v=1"></script>
+<script src="script.js?v=2"></script>
 </body>
 </html>

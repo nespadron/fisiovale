@@ -55,4 +55,3 @@ El color `4a8f80` es el teal del sitio, para que el widget combine.
 
 - **GitHub Pages:** sube la carpeta a un repo → Settings → Pages → rama main
 - **Netlify:** arrastra la carpeta en https://app.netlify.com/drop
-"# fisiovale" 
