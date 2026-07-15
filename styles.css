@@ -251,6 +251,10 @@ h2 { font-size: clamp(1.9rem, 3.6vw, 2.7rem); font-weight: 600; margin-bottom: 1
     box-shadow: 0 22px 44px rgba(47,79,74,0.14);
     border-color: rgba(74,143,128,0.35);
 }
+@media (min-width: 901px) {
+    /* Centra la última tarjeta cuando queda sola en la fila (conteo no múltiplo de 3) */
+    .cards .card:last-child:nth-child(3n+1) { grid-column: 2 / 3; }
+}
 .card-icon {
     display: grid; place-items: center;
     width: 54px; height: 54px; border-radius: 16px;
@@ -282,6 +286,7 @@ h2 { font-size: clamp(1.9rem, 3.6vw, 2.7rem); font-weight: 600; margin-bottom: 1
 
 /* ===== GALERÍA ===== */
 .gallery-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; }
+.gallery-row-4 { grid-template-columns: repeat(4, 1fr); }
 .gallery-item {
     margin: 0; border-radius: 20px; overflow: hidden;
     background: var(--surface);
@@ -294,39 +299,6 @@ h2 { font-size: clamp(1.9rem, 3.6vw, 2.7rem); font-weight: 600; margin-bottom: 1
 .gallery-item figcaption {
     padding: 0.9rem 1.2rem; font-size: 0.9rem;
     color: var(--muted); font-weight: 500;
-}
-
-/* ===== IMÁGENES "VIVAS" (pan + zoom ligados al scroll) ===== */
-.about-card, .gallery-item { overflow: hidden; }
-.parallax-img { will-change: transform; transform: scale(1.18); }
-
-/* ===== FRANJA PARALLAX ===== */
-.banner {
-    position: relative; overflow: hidden;
-    height: 58vh; min-height: 360px; max-height: 560px;
-    margin-top: 6rem;
-    display: grid; place-items: center;
-}
-.banner-media { position: absolute; inset: -18% 0; }
-.banner-media img {
-    width: 100%; height: 100%; object-fit: cover;
-    will-change: transform;
-}
-.banner::after {
-    content: ''; position: absolute; inset: 0;
-    background: linear-gradient(180deg, rgba(47,79,74,0.55), rgba(47,79,74,0.35) 45%, rgba(47,79,74,0.6));
-}
-.banner-content { position: relative; z-index: 2; text-align: center; padding: 0 2rem; }
-.banner-quote {
-    font-family: 'Playfair Display', serif; font-style: italic;
-    font-size: clamp(1.7rem, 4.2vw, 3rem); font-weight: 600;
-    color: #fff; text-wrap: balance;
-    text-shadow: 0 4px 24px rgba(0,0,0,0.35);
-}
-.banner-author {
-    display: inline-block; margin-top: 1rem;
-    font-size: 0.85rem; letter-spacing: 0.2em; text-transform: uppercase;
-    color: rgba(255,255,255,0.85); font-weight: 500;
 }
 
 /* Cita personal en Sobre mí */
@@ -437,10 +409,12 @@ footer {
     .steps { grid-template-columns: 1fr; }
     .stats-inner { grid-template-columns: 1fr 1fr; padding: 1.4rem; }
 }
+@media (max-width: 900px) and (min-width: 601px) {
+    .gallery-row-4 { grid-template-columns: repeat(2, 1fr); }
+}
 
 /* Respetar la preferencia de menos movimiento */
 @media (prefers-reduced-motion: reduce) {
     .portrait-ring, .float-chip { animation: none; }
     .reveal { opacity: 1; transform: none; transition: none; }
-    .parallax-img { transform: none; }
 }

@@ -126,30 +126,6 @@ if (window.Lenis && window.gsap && window.ScrollTrigger) {
             scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: 0.8 }
         });
     }
-
-    // Imágenes "vivas": pan + zoom ligados al scroll (efecto video)
-    if (!reducedMotion) {
-        document.querySelectorAll('.parallax-img').forEach(img => {
-            gsap.fromTo(img,
-                { yPercent: -7, scale: 1.18 },
-                {
-                    yPercent: 7, scale: 1.08, ease: 'none',
-                    scrollTrigger: {
-                        trigger: img.closest('.gallery-item, .about-card') || img,
-                        start: 'top bottom', end: 'bottom top', scrub: 0.6
-                    }
-                });
-        });
-
-        // Franja parallax: el fondo se desplaza más lento que la página
-        const banner = document.querySelector('.banner');
-        if (banner) {
-            gsap.fromTo('.banner-media', { yPercent: -12 }, {
-                yPercent: 12, ease: 'none',
-                scrollTrigger: { trigger: banner, start: 'top bottom', end: 'bottom top', scrub: 0.5 }
-            });
-        }
-    }
 } else {
     // Fallback sin librerías
     const obs = new IntersectionObserver(entries => {
