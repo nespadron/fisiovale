@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2f4f4a">
+    <meta name="description" content="Fisio Valee — Fisioterapia personalizada con la Lic. Valeria Ponce. Rehabilitación, fisioterapia deportiva y terapia manual. Agenda tu cita en línea.">
+    <title>Fisio Valee | Lic. Valeria Ponce · Fisioterapia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+
+<div id="scroll-progress" aria-hidden="true"></div>
+<canvas id="canvas-soft" aria-hidden="true"></canvas>
+
+<header class="navbar">
+    <a href="#inicio" class="logo">
+        <span class="logo-mark"><i class="fas fa-hand-holding-medical"></i></span>
+        <span class="logo-text">Fisio <em>Valee</em></span>
+    </a>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#geriatria">Geriatría</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#agenda" class="nav-cta">Agenda tu cita</a></li>
+        </ul>
+    </nav>
+    <div class="burger" aria-label="Menu"><div></div><div></div><div></div></div>
+</header>
+
+<main>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="inicio">
+    <div class="hero-content">
+        <div class="hero-eyebrow">Terapia física y rehabilitación · GDL</div>
+        <h1>Recupera tu movimiento, <span class="h1-accent">vive sin dolor.</span></h1>
+        <p class="hero-sub">
+            Soy <strong>Valeria Ponce</strong>, fisioterapeuta. Te acompaño en tu
+            recuperación con tratamientos a tu medida — en consulta o con
+            <strong>servicio a domicilio</strong> en Guadalajara.
+        </p>
+        <div class="cta-group">
+            <a href="#agenda" class="btn-primary">Agenda tu cita →</a>
+            <a href="https://wa.me/523324933064" target="_blank" rel="noopener" class="btn-outline"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+        <div class="portrait-ring">
+            <img src="img/valeria.jpg" alt="Ft. Valeria Ponce dando terapia">
+        </div>
+        <div class="float-chip chip-1"><i class="fas fa-heart-pulse"></i> Bienestar</div>
+        <div class="float-chip chip-2"><i class="fas fa-person-walking"></i> Movilidad</div>
+        <div class="float-chip chip-3"><i class="fas fa-spa"></i> Recuperación</div>
+    </div>
+</section>
+
+<!-- ===== FRANJA DE CONFIANZA ===== -->
+<div class="stats">
+    <div class="stats-inner">
+        <div class="stat reveal"><div class="stat-num"><i class="fas fa-user-check"></i></div><div class="stat-label">Atención 1 a 1</div></div>
+        <div class="stat reveal" style="transition-delay:.1s"><div class="stat-num"><i class="fas fa-clipboard-list"></i></div><div class="stat-label">Planes personalizados</div></div>
+        <div class="stat reveal" style="transition-delay:.2s"><div class="stat-num"><i class="fas fa-calendar-check"></i></div><div class="stat-label">Citas en línea</div></div>
+        <div class="stat reveal" style="transition-delay:.3s"><div class="stat-num"><i class="fas fa-house-medical"></i></div><div class="stat-label">Servicio a domicilio</div></div>
+    </div>
+</div>
+
+<!-- ===== SOBRE MÍ ===== -->
+<section class="section" id="sobre-mi">
+    <div class="two-col reveal">
+        <div>
+            <div class="section-label">Sobre mí</div>
+            <h2>Ft. Valeria Ponce</h2>
+            <p class="about-quote">"Eres tu proyecto más importante, no te descuides."</p>
+            <p class="section-sub">
+                Fisioterapeuta enfocada en ayudarte a moverte mejor y sentirte bien.
+                Cada cuerpo es distinto: por eso evalúo, diseño y ajusto tu tratamiento
+                de forma personalizada, sesión a sesión.
+            </p>
+            <ul class="about-list">
+                <li><i class="fas fa-check"></i> Evaluación funcional completa en tu primera sesión</li>
+                <li><i class="fas fa-check"></i> Experiencia en campo con equipos deportivos</li>
+                <li><i class="fas fa-check"></i> Servicio a domicilio en Guadalajara</li>
+                <li><i class="fas fa-check"></i> Atención geriátrica: movilidad, fuerza y prevención de caídas</li>
+                <li><i class="fas fa-check"></i> Seguimiento de tu progreso y ejercicios para casa</li>
+            </ul>
+            <a href="#agenda" class="btn-primary" style="margin-top:1.6rem">Empieza tu recuperación →</a>
+        </div>
+        <div class="about-card">
+            <img src="img/recuperacion.jpg" alt="Valeria Ponce dando terapia de recuperación a un deportista">
+        </div>
+    </div>
+</section>
+
+<!-- ===== SERVICIOS ===== -->
+<section class="section" id="servicios">
+    <div class="section-label">Servicios</div>
+    <h2 class="reveal">¿Cómo puedo ayudarte?</h2>
+    <p class="section-sub reveal">Tratamientos diseñados para tu lesión, tu ritmo y tus objetivos.</p>
+    <div class="cards">
+        <article class="card reveal">
+            <div class="card-icon"><i class="fas fa-bone"></i></div>
+            <h3>Rehabilitación física</h3>
+            <p>Recuperación de lesiones musculares y articulares: esguinces, contracturas, tendinopatías y dolor de espalda o cuello.</p>
+        </article>
+        <article class="card reveal" style="transition-delay:.08s">
+            <div class="card-icon"><i class="fas fa-person-running"></i></div>
+            <h3>Fisioterapia deportiva</h3>
+            <p>Prevención y tratamiento de lesiones deportivas, readaptación al entrenamiento y mejora del rendimiento.</p>
+        </article>
+        <article class="card reveal" style="transition-delay:.12s">
+            <div class="card-icon"><i class="fas fa-person-cane"></i></div>
+            <h3>Geriatría</h3>
+            <p>Terapia para adultos mayores: entrenamiento de marcha con andadera, prevención de caídas, movilidad articular y ejercicio terapéutico en casa.</p>
+        </article>
+        <article class="card reveal" style="transition-delay:.16s">
+            <div class="card-icon"><i class="fas fa-hands"></i></div>
+            <h3>Terapia manual</h3>
+            <p>Técnicas manuales para aliviar dolor, liberar tensión muscular y recuperar movilidad articular.</p>
+        </article>
+        <article class="card reveal" style="transition-delay:.24s">
+            <div class="card-icon"><i class="fas fa-user-injured"></i></div>
+            <h3>Rehabilitación postquirúrgica</h3>
+            <p>Acompañamiento después de tu cirugía para recuperar fuerza, movilidad y confianza de forma segura.</p>
+        </article>
+        <article class="card reveal" style="transition-delay:.32s">
+            <div class="card-icon"><i class="fas fa-spa"></i></div>
+            <h3>Masaje terapéutico</h3>
+            <p>Masaje de descarga y relajación muscular para deportistas y personas con estrés o tensión acumulada.</p>
+        </article>
+        <article class="card reveal" style="transition-delay:.4s">
+            <div class="card-icon"><i class="fas fa-house-medical"></i></div>
+            <h3>Ejercicio terapéutico</h3>
+            <p>Programas de ejercicio guiado y progresivo para fortalecer, prevenir recaídas y mantener tus resultados.</p>
+        </article>
+    </div>
+</section>
+
+<!-- ===== PROCESO ===== -->
+<section class="section" id="proceso">
+    <div class="section-label">Tu primera visita</div>
+    <h2 class="reveal">Así trabajamos juntos</h2>
+    <div class="steps">
+        <div class="step reveal">
+            <div class="step-num">1</div>
+            <h3>Evaluación</h3>
+            <p>Platicamos sobre tu dolor o lesión y evalúo tu movilidad, fuerza y postura.</p>
+        </div>
+        <div class="step reveal" style="transition-delay:.1s">
+            <div class="step-num">2</div>
+            <h3>Plan a tu medida</h3>
+            <p>Diseño un plan de tratamiento claro, con objetivos y tiempos realistas.</p>
+        </div>
+        <div class="step reveal" style="transition-delay:.2s">
+            <div class="step-num">3</div>
+            <h3>Tratamiento</h3>
+            <p>Sesiones de terapia manual, ejercicio y técnicas según tu caso.</p>
+        </div>
+        <div class="step reveal" style="transition-delay:.3s">
+            <div class="step-num">4</div>
+            <h3>Seguimiento</h3>
+            <p>Medimos tu progreso y te dejo ejercicios para mantener los resultados.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== GALERÍA ===== -->
+<section class="section" id="galeria">
+    <div class="section-label">En acción</div>
+    <h2 class="reveal">Fisioterapia dentro y fuera del consultorio</h2>
+    <p class="section-sub reveal">Trabajo en campo con deportistas y atención a domicilio en Guadalajara.</p>
+    <div class="gallery-row">
+        <figure class="gallery-item reveal">
+            <img src="img/deportiva.jpg" alt="Valeria atendiendo a un futbolista en la cancha" loading="lazy">
+            <figcaption>Fisioterapia deportiva en campo</figcaption>
+        </figure>
+        <figure class="gallery-item reveal" style="transition-delay:.1s">
+            <img src="img/cancha.jpg" alt="Sesión de presoterapia con deportista" loading="lazy">
+            <figcaption>Recuperación con presoterapia</figcaption>
+        </figure>
+        <figure class="gallery-item reveal" style="transition-delay:.2s">
+            <img src="img/valeria.jpg" alt="Valeria dando masaje terapéutico" loading="lazy">
+            <figcaption>Terapia manual personalizada</figcaption>
+        </figure>
+    </div>
+</section>
+
+<!-- ===== GERIATRÍA ===== -->
+<section class="section" id="geriatria">
+    <div class="section-label">Geriatría</div>
+    <h2 class="reveal">Acompañamiento para adultos mayores</h2>
+    <p class="section-sub reveal">Terapia a domicilio enfocada en seguridad, movilidad e independencia: entrenamiento de marcha, electroestimulación, movilidad cervical y ejercicio terapéutico.</p>
+    <div class="gallery-row gallery-row-4">
+        <figure class="gallery-item reveal">
+            <img src="img/geriatria-marcha.jpg" alt="Entrenamiento de marcha con andadera para paciente adulto mayor" loading="lazy">
+            <figcaption>Entrenamiento de marcha con andadera</figcaption>
+        </figure>
+        <figure class="gallery-item reveal" style="transition-delay:.1s">
+            <img src="img/geriatria-electroestimulacion.jpg" alt="Sesión de electroestimulación en terapia geriátrica" loading="lazy">
+            <figcaption>Electroestimulación y manejo del dolor</figcaption>
+        </figure>
+        <figure class="gallery-item reveal" style="transition-delay:.2s">
+            <img src="img/geriatria-cervical.jpg" alt="Movilización cervical a paciente adulto mayor" loading="lazy">
+            <figcaption>Movilidad cervical y postura</figcaption>
+        </figure>
+        <figure class="gallery-item reveal" style="transition-delay:.3s">
+            <img src="img/geriatria-ejercicio.jpg" alt="Ejercicio terapéutico de rodilla con bastón para adulto mayor" loading="lazy">
+            <figcaption>Ejercicio terapéutico funcional</figcaption>
+        </figure>
+    </div>
+</section>
+
+<!-- ===== AGENDA (CALENDLY) ===== -->
+<section class="section agenda" id="agenda">
+    <div class="section-label">Agenda</div>
+    <h2 class="reveal">Reserva tu cita en línea</h2>
+    <p class="section-sub reveal">Elige el día y la hora que mejor te acomoden. Recibirás confirmación al instante.</p>
+
+    <!-- ============================================================
+         CALENDLY — Widget en línea
+         1. Crea tu cuenta en https://calendly.com
+         2. Copia la liga de tu evento (ej. https://calendly.com/fisiovalee/consulta)
+         3. Reemplaza la URL en data-url aquí abajo
+         ============================================================ -->
+    <div class="calendly-inline-widget reveal"
+         data-url="https://calendly.com/TU-USUARIO/consulta?hide_gdpr_banner=1&primary_color=4a8f80"
+         style="min-width:320px;height:700px;"></div>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+    <p class="agenda-alt reveal">¿Prefieres escribirme directo?
+        <a href="https://wa.me/523324933064" target="_blank" rel="noopener">WhatsApp 33-2493-3064 <i class="fab fa-whatsapp"></i></a>
+        &nbsp;·&nbsp;
+        <a href="https://www.instagram.com/fisio.valee" target="_blank" rel="noopener">DM en Instagram <i class="fab fa-instagram"></i></a>
+    </p>
+</section>
+
+<!-- ===== CONTACTO / REDES ===== -->
+<section class="section contact" id="contacto">
+    <div class="section-label">Contacto</div>
+    <h2 class="reveal">Encuéntrame en redes</h2>
+    <p class="section-sub reveal">Sígueme para tips de movilidad, ejercicios y disponibilidad de citas.</p>
+    <div class="social-row">
+        <a class="social-card reveal" href="https://wa.me/523324933064" target="_blank" rel="noopener">
+            <i class="fab fa-whatsapp"></i>
+            <h3>33-2493-3064</h3>
+            <p>WhatsApp · Agenda tu cita</p>
+        </a>
+        <a class="social-card reveal" style="transition-delay:.08s" href="https://www.instagram.com/fisio.valee" target="_blank" rel="noopener">
+            <i class="fab fa-instagram"></i>
+            <h3>@fisio.valee</h3>
+            <p>Instagram profesional</p>
+        </a>
+        <a class="social-card reveal" style="transition-delay:.16s" href="https://www.facebook.com/fisiovalee/" target="_blank" rel="noopener">
+            <i class="fab fa-facebook"></i>
+            <h3>Fisio Valee</h3>
+            <p>Facebook</p>
+        </a>
+        <a class="social-card reveal" style="transition-delay:.24s" href="https://www.instagram.com/vale.ch11" target="_blank" rel="noopener">
+            <i class="fab fa-instagram"></i>
+            <h3>@vale.ch11</h3>
+            <p>Instagram personal</p>
+        </a>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <span class="logo-mark"><i class="fas fa-hand-holding-medical"></i></span>
+            <span class="logo-text">Fisio <em>Valee</em></span>
+        </div>
+        <div class="footer-info">
+            <p>Terapia física y rehabilitación · Servicio a domicilio, GDL</p>
+            <p><a href="https://wa.me/523324933064" style="color:inherit">WhatsApp 33-2493-3064</a></p>
+            <p class="footer-social">
+                <a href="https://wa.me/523324933064" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/fisio.valee" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/fisiovalee/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            </p>
+        </div>
+    </div>
+    <p class="footer-copy">© 2026 Fisio Valee · Todos los derechos reservados</p>
+</footer>
+
+<script src="libs/gsap.min.js"></script>
+<script src="libs/ScrollTrigger.min.js"></script>
+<script src="libs/lenis.min.js"></script>
+<script src="script.js?v=1"></script>
+</body>
+</html>
